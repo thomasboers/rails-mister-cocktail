@@ -1,0 +1,5 @@
+<ul>
+<% @doses.each do |dose| %>
+<%= link_to dose.description, dose_path(dose)  %>
+<% end %>
+</ul>

@@ -1,0 +1,13 @@
+<h1>Doses#new</h1>
+
+<div class="container">
+  <div class="row">
+    <div class="col-xs-6 col-xs-offset-3">
+      <%= simple_form_for [@cocktail, @dose] do |f| %>
+  <%= f.input :description %>
+  <%= f.input :ingredient_id, collection: Ingredient.all %>
+  <%= f.submit "Add dose", class: "btn btn-primary" %>
+<% end %>
+    </div>
+  </div>
+</div>
